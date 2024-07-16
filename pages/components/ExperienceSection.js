@@ -32,7 +32,7 @@ const ExperienceSection = ({ experienceInView }) => {
             position="Systems Developer"
             date="2023 - Present"
             description="Participated in building a web application for a leading insurance company, with a focus on user experience and design."
-            skills={["Angular", "HTML", "CSS", "JS", "TS", "Spring Boot", "Mysql","PHP","keycloack", "Kubernetes","GCP","Docker"]}
+            skills={["Angular", "HTML", "CSS", "JS", "TS", "Spring Boot", "Mysql","PHP","keycloack", "Kubernetes","GCP","Docker","wordpress"]}
           />
           <ExperienceCard
             company="App Cake Hong Kong"
