@@ -3,6 +3,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
@@ -17,6 +18,9 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import web7 from "../public/web7.png";
+import web8 from "../public/web8.png";
+import web9 from "../public/web9.png";
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -68,12 +72,14 @@ export default function Home() {
   const [filter, setFilter] = useState("all");
 
   const portfolioItems = [
-    { src: web1, alt: "Web 1", category: "web apps", githubUrl: "#", viewUrl: "https://www.gruma.co.zw/index.html" },
-    { src: web2, alt: "Web 2", category: "web apps", githubUrl: "#", viewUrl: "https://jabulesimangaportfolio.netlify.app" },
-    { src: web3, alt: "Web 3", category: "web apps", githubUrl: "#", viewUrl: "https://nikewebsitejabule.netlify.app" },
-    { src: web4, alt: "Web 4", category: "mobile apps", githubUrl: "#", viewUrl: "#" },
-    { src: web5, alt: "Web 5", category: "big data apps", githubUrl: "#", viewUrl: "#" },
-    { src: web6, alt: "Web 6", category: "mobile apps", githubUrl: "#", viewUrl: "#" },
+    { src: web9, alt: "Web 9", category: "web apps", githubUrl: "https://github.com/jaybee21/jhealthcare", viewUrl: "https://jhealthcare-llm92nqgd-jabule-s-projects.vercel.app" , technologies: [ "Next.js", "Appwrite", "Typescript", "TailwindCSS", "ShadCN", "Twilio"]},
+    { src: web8, alt: "Web 8", category: "web apps", githubUrl: "https://github.com/jaybee21/jrentals", viewUrl: "https://jrentals.netlify.app" , technologies: [ "Next.js", "Typescript", "Tailwind"]},
+    { src: web7, alt: "Web 7", category: "web apps", githubUrl: "https://github.com/jaybee21/ping_pong_game", viewUrl: "https://pingpongjabu.netlify.app", technologies: ["HTML", "CSS", "JavaScript"] },
+    // { src: web1, alt: "Web 1", category: "web apps", githubUrl: "#", viewUrl: "https://www.gruma.co.zw/index.html", technologies: ["HTML", "CSS", "JavaScript", "Boostrap"] },
+    { src: web3, alt: "Web 3", category: "web apps", githubUrl: "#", viewUrl: "https://nikewebsitejabule.netlify.app" , technologies: ["HTML", "CSS", "JavaScript", ]},
+    // { src: web4, alt: "Web 4", category: "mobile apps", githubUrl: "#", viewUrl: "#", technologies: ["Java", "CSS", "HTML"] },
+    // { src: web5, alt: "Web 5", category: "big data apps", githubUrl: "#", viewUrl: "#", technologies: ["HTML", "CSS", "PHP"] },
+    // { src: web6, alt: "Web 6", category: "mobile apps", githubUrl: "#", viewUrl: "#" , technologies: ["HTML", "CSS", "JavaScript", "SpringBoot"]},
   ];
   const { ref: sectionRef, inView: sectionInView } = useInView({
     threshold: 0.5, 
@@ -83,6 +89,12 @@ export default function Home() {
   
 
   const filteredPortfolioItems = filter === "all" ? portfolioItems : portfolioItems.filter(item => item.category === filter);
+  console.log('Filtered Portfolio Items:', filteredPortfolioItems);
+  console.log("Portfolio Items:", portfolioItems);
+  portfolioItems.forEach((item, index) => {
+    console.log(`Technologies for Item ${index + 1}:`, item.technologies);
+  });
+  
   const [typedName, setTypedName] = useState("");
   useEffect(() => {
     const fullName = "JJabule Simanga";
@@ -151,7 +163,7 @@ export default function Home() {
           </nav>
           
           <motion.div
-            className="flex flex-col md:flex-row justify-between items-center backdrop-blur-md bg-opacity-10 bg-blue-200 dark:bg-blue-800 rounded-md p-8 md:p-10 gap-8 md:gap-16"
+            className="flex flex-col md:flex-row justify-between items-center backdrop-blur-md bg-opacity-10 bg-blue-200 dark:bg-purple-900 rounded-md p-8 md:p-10 gap-8 md:gap-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.50 }}
@@ -162,27 +174,31 @@ export default function Home() {
   {typedName}
 </h2>
 
-              <h3 className="text-2xl py-2 md:text-3xl  text-blue-600 dark:text-blue-600">
-                Developer/ Network admin
-              </h3>
-              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-                I specialize in developing pixel-perfect, engaging, and accessible digital experiences, leveraging my expertise as a skilled frontend and backend developer.
-              </p>
+<h3 className="text-2xl py-2 md:text-3xl text-blue-600 dark:text-blue-600">
+  FullStack Developer & Professional Cloud Architect
+</h3>
+<p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+  I specialize in developing pixel-perfect, engaging, and accessible digital experiences, leveraging my expertise as a skilled frontend and backend developer.
+</p>
+<p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+  Check out my <a href="https://www.credly.com/badges/c1d332df-20e2-4438-b38b-f8988ce8975a/public_url" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">GCP Cloud Architect Certification</a>.
+</p>
+
 
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-                <Link href="https://twitter.com/your_twitter_handle">
+                <Link href="https://github.com/jaybee21">
                   <a className="hover:text-blue-500 transition-colors">
                     <AiFillTwitterCircle />
                   </a>
                 </Link>
-                <Link href="https://linkedin.com/in/your_linkedin_profile">
+                <Link href="https://www.linkedin.com/in/jabule-simanga-56425a155/">
                   <a className="hover:text-blue-500 transition-colors">
                     <AiFillLinkedin />
                   </a>
                 </Link>
-                <Link href="https://youtube.com/your_youtube_channel">
-                  <a className="hover:text-red-500 transition-colors">
-                    <AiFillYoutube />
+                <Link href="https://github.com/jaybee21">
+                  <a className="hover:text-blue-500 transition-colors">
+                    <AiFillGithub />
                   </a>
                 </Link>
               </div>
@@ -214,6 +230,7 @@ export default function Home() {
           <h3 className="text-4xl md:text-6xl font-semibold">
   <span style={{ fontSize: "2rem" }}>Portfolio</span>
 </h3>
+
 
   <div className="flex justify-center mt-4 space-x-4">
     <button onClick={() => setFilter("all")} className="btn-filter">All</button>
@@ -247,6 +264,9 @@ export default function Home() {
                 <a href={item.viewUrl} className="block hover:underline" target="_blank" rel="noopener noreferrer">
                   View Project
                 </a>
+                <div>
+        <span className="font-bold">Technologies:</span> {item.technologies.join(", ")}
+      </div>
               </div>
             </div>
           </motion.div>

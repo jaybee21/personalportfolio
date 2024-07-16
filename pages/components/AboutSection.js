@@ -23,7 +23,7 @@ const AboutSection = () => {
         <h3 className="text-4xl md:text-6xl font-semibold ">
           My Interests and Hobbies
         </h3>
-        <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
+        <p className="text-base md:text-lg text-gray-500  my-4 md:my-6  ">
           {/* Your content here */}
           My main focus these days is building accessible user interfaces for my current employer. I most enjoy building software in the sweet spot where design and engineering meet — things that look good but are also built well under the hood. <br />
          When I&apos;m not at the computer, I&apos;m usually in the gym, reading, hanging out with my family and friends, or taking care of my garden.
