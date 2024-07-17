@@ -72,7 +72,7 @@ export default function Home() {
   const [filter, setFilter] = useState("all");
 
   const portfolioItems = [
-    { src: web9, alt: "Web 9", category: "web apps", githubUrl: "https://github.com/jaybee21/jhealthcare", viewUrl: "jhealthcare.vercel.app" , technologies: [ "Next.js", "Appwrite", "Typescript", "TailwindCSS", "ShadCN", "Twilio"]},
+    { src: web9, alt: "Web 9", category: "web apps", githubUrl: "https://github.com/jaybee21/jhealthcare", viewUrl: "https://jhealthcare.vercel.app" , technologies: [ "Next.js", "Appwrite", "Typescript", "TailwindCSS", "ShadCN", "Twilio"]},
     { src: web8, alt: "Web 8", category: "web apps", githubUrl: "https://github.com/jaybee21/jrentals", viewUrl: "https://jrentals.netlify.app" , technologies: [ "Next.js", "Typescript", "Tailwind"]},
     { src: web7, alt: "Web 7", category: "web apps", githubUrl: "https://github.com/jaybee21/ping_pong_game", viewUrl: "https://pingpongjabu.netlify.app", technologies: ["HTML", "CSS", "JavaScript"] },
     // { src: web1, alt: "Web 1", category: "web apps", githubUrl: "#", viewUrl: "https://www.gruma.co.zw/index.html", technologies: ["HTML", "CSS", "JavaScript", "Boostrap"] },

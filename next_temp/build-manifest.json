@@ -1,0 +1,58 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/FHjGhCOU24Cw9xnWymPcY/_buildManifest.js",
+    "static/FHjGhCOU24Cw9xnWymPcY/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-ed075df0e0b45174.js",
+      "static/chunks/main-e7a7892cb0edc024.js",
+      "static/chunks/d7eeaac4-55c71bda8761fae0.js",
+      "static/chunks/867-bf6bc7f05e1f0ae3.js",
+      "static/chunks/156-5708f17b6c3b4ac9.js",
+      "static/chunks/pages/index-4d381f296b0a3644.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-ed075df0e0b45174.js",
+      "static/chunks/main-e7a7892cb0edc024.js",
+      "static/css/bc6cf97d4205cf30.css",
+      "static/chunks/pages/_app-2227dd4fe4f97ba1.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-ed075df0e0b45174.js",
+      "static/chunks/main-e7a7892cb0edc024.js",
+      "static/chunks/pages/_error-e4f561a102d9bb14.js"
+    ],
+    "/components/AboutSection": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-ed075df0e0b45174.js",
+      "static/chunks/main-e7a7892cb0edc024.js",
+      "static/chunks/867-bf6bc7f05e1f0ae3.js",
+      "static/chunks/pages/components/AboutSection-b9adb0398c7a0048.js"
+    ],
+    "/components/ExperienceCard": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-ed075df0e0b45174.js",
+      "static/chunks/main-e7a7892cb0edc024.js",
+      "static/chunks/867-bf6bc7f05e1f0ae3.js",
+      "static/chunks/pages/components/ExperienceCard-af94ce175ec19398.js"
+    ],
+    "/components/ExperienceSection": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-ed075df0e0b45174.js",
+      "static/chunks/main-e7a7892cb0edc024.js",
+      "static/chunks/867-bf6bc7f05e1f0ae3.js",
+      "static/chunks/pages/components/ExperienceSection-f95a43b64afc7d23.js"
+    ]
+  },
+  "ampFirstPages": []
+}
